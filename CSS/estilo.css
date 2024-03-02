@@ -494,13 +494,13 @@ main .productosInd div a div:hover {
   border-color: #ffffff;
 }
 main .productosInd div a .productosInicio1 {
-  background-image: url(../fotos/empanadas.jpg);
+  background-image: url(../fotos/empanadas.webp);
 }
 main .productosInd div a .productosInicio2 {
   background-image: url(../fotos/pizzas.jpg);
 }
 main .productosInd div a .productosInicio3 {
-  background-image: url(../fotos/ensaladas.jpg);
+  background-image: url(../fotos/ensaladas.webp);
 }
 
 /* SECTION  Con el sello de EME */
