@@ -115,7 +115,8 @@
   font-family: "Protest Riot", sans-serif;
 }
 .containerNosotros section img {
-  width: 700px;
+  max-width: 100vw;
+  /*width: 700px; */
   margin: 5px;
   border: solid rgb(255, 255, 255) 2px;
   border-radius: 10%;
@@ -434,6 +435,7 @@ a {
 
 /* MAIN Productos */
 main {
+  max-width: 100vw;
   width: 100%;
   padding: 10px;
   grid-area: main;
@@ -585,21 +587,40 @@ main .productosInd div a .productosInicio3 {
   }
   .containerNosotros main {
     border: solid black 2px;
+    width: 380px;
+  }
+  .containerNosotros section {
+    max-width: 100vw;
   }
   .containerNosotros section img {
-    width: 400px;
+    width: 380px;
   }
   .contacto {
     grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
   }
-  .destacados main h3, .destacados main h5 {
+  .destacados main {
+    max-width: 100vw;
+  }
+  .destacados main h3 {
+    font-size: 2rem;
+  }
+  .destacados main h5 {
     text-align: center;
+  }
+  .destacados section {
+    max-width: 100vw;
+  }
+  .destacados section img {
+    max-width: 100vw;
+    padding: 5px;
   }
   .destacados section h4 {
     text-align: center;
+    font-size: 1rem;
   }
-  .destacados .section2, .destacados .section4 {
-    flex-direction: column-reverse;
+  .destacados .section2 img, .destacados .section4 img {
+    max-width: 100vw;
+    padding: 5px;
   }
 }
 
