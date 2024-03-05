@@ -1,6 +1,7 @@
 @import "./variables";
 
 .header{
+    position: relative;
     grid-area: header;
     width: 100%;
     padding: 5px;
@@ -12,11 +13,18 @@
     align-items: center;
     flex-wrap: wrap;
 
+    .logosredes{
+        margin: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
     .textoHeader{
         margin: 0px 20px;
              h1{
         font-family: 'Kanit', sans-serif;
         font-size: 3.2rem;
             }
-    } 
+    }
 }

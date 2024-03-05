@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Variables */
 .header {
+  position: relative;
   grid-area: header;
   width: 100%;
   padding: 5px;
@@ -11,6 +12,12 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+.header .logosredes {
+  margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .header .textoHeader {
   margin: 0px 20px;
@@ -138,7 +145,7 @@
   font-family: "Protest Riot", sans-serif;
 }
 .containerProductos ul {
-  margin: 5px;
+  margin: 15px;
   align-items: center;
   list-style-type: none;
   font-size: 1.3rem;
@@ -146,9 +153,9 @@
 }
 .containerProductos .section1 {
   grid-area: section1;
+  padding: 10px;
   background-color: #000000;
   color: white;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -384,6 +391,7 @@
 }
 .contacto main h4 {
   font-family: "Protest Riot", sans-serif;
+  text-align: center;
 }
 .contacto main form {
   background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c2c2ba' fill-opacity='0.46' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
@@ -399,6 +407,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contacto main .maps {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.contacto main .maps .iframe {
+  border: #000000 solid 2px;
+  padding: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c2c2ba' fill-opacity='0.46' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 * {
