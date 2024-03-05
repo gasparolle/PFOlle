@@ -115,8 +115,7 @@
   font-family: "Protest Riot", sans-serif;
 }
 .containerNosotros section img {
-  max-width: 100vw;
-  /*width: 700px; */
+  width: 700px;
   margin: 5px;
   border: solid rgb(255, 255, 255) 2px;
   border-radius: 10%;
@@ -139,11 +138,10 @@
   font-family: "Protest Riot", sans-serif;
 }
 .containerProductos ul {
-  margin: 15px;
+  margin: 5px;
   align-items: center;
   list-style-type: none;
   font-size: 1.3rem;
-  text-align: auto;
   text-align: right;
 }
 .containerProductos .section1 {
@@ -499,7 +497,7 @@ main .productosInd div a .productosInicio1 {
   background-image: url(../fotos/empanadas.webp);
 }
 main .productosInd div a .productosInicio2 {
-  background-image: url(../fotos/pizzas.jpg);
+  background-image: url(../fotos/pizzas.webp);
 }
 main .productosInd div a .productosInicio3 {
   background-image: url(../fotos/ensaladas.webp);
@@ -508,7 +506,7 @@ main .productosInd div a .productosInicio3 {
 /* SECTION  Con el sello de EME */
 .section {
   grid-area: section;
-  background-image: url(../fotos/bondiola_fondo.jpg);
+  background-image: url(../fotos/bondiola_fondo.webp);
   background-position: center;
   background-size: cover;
   display: flex;
@@ -548,6 +546,9 @@ main .productosInd div a .productosInicio3 {
 
 /* MEDIA QUERIS */
 @media screen and (max-width: 780px) {
+  body {
+    max-width: 100vw;
+  }
   .containerIndex {
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -558,6 +559,9 @@ main .productosInd div a .productosInicio3 {
   p, h1, h2, h3, li {
     text-align: center;
   }
+  .destacadosInd {
+    max-width: 90vw;
+  }
   .containerProductos {
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -567,7 +571,6 @@ main .productosInd div a .productosInicio3 {
   }
   .containerProductos .section1 .pizzas {
     flex-direction: column;
-    text-align: center;
   }
   .containerProductos .section2 .masOpciones {
     flex-direction: column;
@@ -579,7 +582,7 @@ main .productosInd div a .productosInicio3 {
     flex-direction: column;
   }
   .containerProductos main iframe {
-    max-width: 400px;
+    max-width: 370px;
   }
   .footer {
     flex-direction: column;
@@ -597,6 +600,11 @@ main .productosInd div a .productosInicio3 {
   }
   .contacto {
     grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
+  }
+  .destacados {
+    /*
+    .section2, .section4{
+    } */
   }
   .destacados main {
     max-width: 100vw;
@@ -617,10 +625,6 @@ main .productosInd div a .productosInicio3 {
   .destacados section h4 {
     text-align: center;
     font-size: 1rem;
-  }
-  .destacados .section2 img, .destacados .section4 img {
-    max-width: 100vw;
-    padding: 5px;
   }
 }
 
