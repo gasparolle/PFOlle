@@ -388,6 +388,9 @@
 }
 .contacto main {
   background-color: #f4f10a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contacto main h4 {
   font-family: "Protest Riot", sans-serif;
