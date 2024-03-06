@@ -621,11 +621,6 @@ main .productosInd div a .productosInicio3 {
   .contacto {
     grid-template-rows: 0.2fr 0.1fr 1fr 0.2fr;
   }
-  .destacados {
-    /*
-    .section2, .section4{
-    } */
-  }
   .destacados main {
     max-width: 100vw;
   }
